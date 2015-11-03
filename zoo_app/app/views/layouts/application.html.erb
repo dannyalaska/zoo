@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ZooApp</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+  <% if logged_in %>
+      <div id="logout">
+        <%= button_to 'Logout', logout_path, :method => :delete %>
+      </div>
+    <% end %>
+    <img src="http://zoo-project.org/trac/raw-attachment/wiki/ZooWebSite/Identity/zoo-project-logotext-400x150-200dpi.png" class="logo">
+<%= yield %>
+
+</body>
+</html>

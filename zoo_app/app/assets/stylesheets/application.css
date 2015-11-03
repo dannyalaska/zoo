@@ -1,0 +1,93 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+
+
+ body {
+     background-image: url("http://www.freevector.com/site_media/preview_images/FreeVector-Jungle-Background.jpg");
+     background-position: center;
+     background-color: black;
+     color: white;
+   }
+
+   input, label {
+     font-family: sans-serif;
+     font-size: 20px;
+     display: block;
+     margin: 20px auto;
+     color: black;
+   }
+
+   .logo {
+     display: block;
+     margin: 15px auto;
+   }
+
+   #user-page{
+     text-align: center;
+   }
+
+  .container {
+   width: 510px;
+   height: 550px;
+   margin: 50px auto;
+   text-align: center;
+   font-size: 18px;
+   border: 10px dotted rgb(255, 191, 0);
+   overflow: scroll;
+  }
+
+  .field_with_errors > input{
+    border: 3px solid red;
+  }
+
+  .login {
+   margin-left: 84%;
+   margin-top: -106px;
+   height: 100px;
+   width: 200px;
+  }
+
+
+  .user {
+    border: 1px solid white;
+    height: 50px;
+    margin-top: 15px;
+    padding-top: 10px;
+    font-size: 30px;
+    text-align: center;
+  }
+
+ .error_messages {
+   margin-bottom: 10px;
+   color: red;
+ }
+
+ #logout {
+   position: absolute;
+   top: 10px;
+   right: 20px;
+ }
+
+ul {
+  list-style: none;
+}
+input, label {
+  margin-top: 15px;
+  margin-bottom: 5px;
+  font-size: 25px;
+  color: rgb(19, 80, 1);
+}

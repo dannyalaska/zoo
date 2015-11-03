@@ -1,0 +1,20 @@
+<div id="user-page">
+
+    <div class="form">
+    <%= form_for @user, :html => {:class => "container"} do |f| %>
+  <h1>Hello <%= @user.username %>!</h1>
+  <p>
+    Welcome to your <em>personal zoo page!</em><br>Here you can create your profile with a <em>personalized profile picture!</em>
+  </p>
+  <img src="<%= @user.image_url%>" width= "200", height= "200"/>
+  <ul>
+    <li><%= f.label :image_url, "Add/Change Your Profile Pic: " %>
+    <%= f.text_field :image_url %>
+  <%=  f.submit%></li>
+    </div>
+    <% end %>
+  <li><%= button_to 'Delete My Profile', @user, method: :delete, action: :delete %></li>
+
+  </ul>
+
+</div>
